@@ -104,7 +104,7 @@ const Header = () => {
       </div>
 
       {/* Action Buttons */}
-      <div className="flex justify-center flex-col sm:flex-row gap-4 mt-4">
+      <div className="flex justify-center items-center flex-col sm:flex-row gap-4 mt-4">
         {/* Contact */}
         <a
           href="#contact"
