@@ -88,7 +88,6 @@ const Header = () => {
         <h6 className="text-2xl font-bold font-Ovo text-gray-500 dark:text-gray-300">
          Grow Smarter with KlyroTech
         </h6>
-        
       </div>
 
       {/* Headline */}
@@ -129,7 +128,8 @@ const Header = () => {
 
         {/* Company Profile / Portfolio */}
         <a
-          href="/KlyroTech-Company-Profile.pdf"
+          href="/klyro-tech-profile.pdf"
+          download="KlyroTech-Company-Profile.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="border rounded-full p-3 gap-4 flex items-center
