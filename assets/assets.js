@@ -6,7 +6,6 @@ import logo_usry_green from './logo_usry_green.png';
 import logo_usry_white from './logo_usry_white.png'
 import top_arrow from './top-arrow-white.png'
 import top_arrow_black from './top-arrow-black.png'
-
 import last_web from "./last-web.webp"
 import marketing_icon_dark from './goal-dark.png'
 import meta from "./meta.png";
@@ -131,7 +130,7 @@ export const workData = [
     title: 'MERN stack project',
     description: 'Web Design',
     bgImage: '/work-2.webp',
-    link: 'https://github.com/Ahmed-Mohamed-Yousry', // 🔗 رابط GitHub
+    link: 'https://github.com/Ahmed-Y-abdelrahem', // 🔗 رابط GitHub
   },
   {
     title: 'MEDIA BUYING',
@@ -149,11 +148,37 @@ export const workData = [
 
 // Services Data
 export const serviceData = [
-    { icon: assets.last_web, title: 'Web design', description: 'Develop responsive websites using React, Next.js, Tailwind CSS, and modern front-end practices.', link: '' },
-    { icon: assets.back_end, title: 'Backend & APIs', description: 'Build secure RESTful APIs and manage databases using Node.js, Express, MongoDB, and MySQL....', link: '' },
-    { icon: assets.digital_marketing, title: 'Digital Marketing', description: 'Manage high-performing Meta, Google, and LinkedIn ad campaigns, create content strategies, and optimize conversions.', link: '' },
-    { icon: assets.seo, title: 'SEO & Social Media', description: 'Boost online visibility through SEO tools like Ahrefs, SE Ranking and manage social media campaigns effectively.', link: '' },
-]
+  {
+    title: "Performance Marketing",
+    description: "Managing and optimizing paid campaigns across Meta, Google, and LinkedIn to generate high-quality leads and maximize ROI.",
+    image: "/performance.png"
+  },
+  {
+    title: "Lead Generation",
+    description: "Building and scaling lead generation systems that consistently deliver qualified prospects for business growth.",
+    image: "/leads.png"
+  },
+  {
+    title: "Funnel Optimization",
+    description: "Improving conversion rates through landing page optimization, user journey analysis, and A/B testing.",
+    image: "/funnel.png"
+  },
+  {
+    title: "Sales Strategy",
+    description: "Designing and executing sales processes that increase closing rates and drive revenue growth.",
+    image: "/sales.png"
+  },
+  {
+    title: "Content & Ads Strategy",
+    description: "Creating data-driven content and ad creatives that attract, engage, and convert target audiences.",
+    image: "/content.png"
+  },
+  {
+    title: "Analytics & Reporting",
+    description: "Tracking performance metrics and providing actionable insights to continuously improve campaign results.",
+    image: "/analytics.png"
+  }
+];
 
 // Info List Data
 export const infoList = [
@@ -171,10 +196,10 @@ export const toolsData = [
 // Projects Data
 export const allProjects = [
     {
-      title: 'Morgan',
-      description: 'portfolio website famliar with bootstrap ',
-      bgImage: '/Morgan.png',
-      link: 'https://bootstrab-project-coral.vercel.app/'
+      title: 'APTC',
+      description: 'website for contracting company ',
+      bgImage: '/aptc.png',
+      link: 'https://aptc-tan.vercel.app/'
     },
     {
       title: 'E-commerce Platform',
