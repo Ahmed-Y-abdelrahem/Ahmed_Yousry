@@ -10,7 +10,6 @@ import Contact from "./components/Contact";
 export default function Home() {
   return (
     <>
-      
       <Header />
       <AboutMe />
       <Services />
