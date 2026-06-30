@@ -4,102 +4,795 @@ import { assets, allProjects } from '../../../assets/assets';
 import React from 'react';
 import Image from 'next/image';
 
+
 const ProjectsPage = () => {
+
+
   return (
-    <div className="min-h-screen py-14 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-7xl mx-auto">
 
-        {/* Header */}
-        <div className="text-center mb-14">
-          <p className="font-Ovo text-lg text-gray-500 dark:text-gray-300 mb-2 tracking-wide">
-            My Portfolio
-          </p>
+    <section
 
-          <h1 className="md:text-5xl text-4xl font-bold font-Ovo text-black dark:text-white mb-4">
-            Selected Work
-          </h1>
+    className="
+    relative
+    w-full
+    min-h-screen
 
-          <p className="max-w-2xl mx-auto text-gray-500 dark:text-gray-300 font-Ovo leading-relaxed">
-            A curated selection of projects where I focus on clean design,
-            scalable development, and impactful user experiences.
-          </p>
-        </div>
+    py-24
+    px-5
 
-        {/* Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    overflow-hidden
 
-          {allProjects.map((project, index) => (
-            <div
-              key={index}
-              className="group relative aspect-square rounded-2xl overflow-hidden cursor-pointer
-              bg-no-repeat bg-cover bg-center shadow-md
-              transition-all duration-500 ease-out
-              hover:scale-[1.04] hover:-translate-y-3 hover:shadow-[0_30px_60px_rgba(0,0,0,0.35)]
-              hover:rotate-[0.3deg]"
-              style={{
-                backgroundImage: `url(${project.bgImage})`,
-              }}
-            >
-              {/* Cinematic Gradient Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent
-              dark:from-black/75 dark:via-black/20 dark:to-transparent
-              transition-all duration-500 group-hover:from-black/70 group-hover:dark:from-black/85" />
+    "
 
-              {/* Subtle light flash effect */}
-              <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700
-              bg-gradient-to-tr from-transparent via-white/5 to-transparent" />
+    >
 
-              {/* Card Info */}
-              <div
-                className="absolute bottom-5 left-1/2 -translate-x-1/2 w-10/12
-                bg-white/90 dark:bg-[#11001f]/90 backdrop-blur-xl
-                rounded-xl py-3 px-5 flex items-center justify-between
-                border border-transparent shadow-lg
-                transition-all duration-500 ease-out
-                group-hover:bottom-8 group-hover:border-[#ada1f9]/40
-                group-hover:shadow-[0_10px_30px_rgba(0,0,0,0.25)]"
-              >
-                <div className="text-left">
-                  <h3 className="font-medium text-black dark:text-white tracking-tight">
-                    {project.title}
-                  </h3>
-                  <p className="text-sm text-gray-700 dark:text-gray-300 line-clamp-2">
-                    {project.description}
-                  </p>
-                </div>
 
-                {/* Action Button */}
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={(e) => e.stopPropagation()}
-                  className="relative w-9 aspect-square flex items-center justify-center
-                  rounded-full bg-[#ada1f9] border border-black
-                  shadow-[2px_2px_0_#7768c3]
-                  transition-all duration-300
-                  hover:scale-110 hover:rotate-6 active:scale-95
-                  hover:shadow-[4px_4px_0_#8f85d9]"
-                >
-                  {/* micro glow ring */}
-                  <span className="absolute inset-0 rounded-full opacity-0 group-hover:opacity-100
-                  transition-opacity duration-500 bg-[#ada1f9]/20 blur-md" />
 
-                  <Image
-                    src={assets.send_icon}
-                    alt="open project"
-                    className="w-5 relative z-10 transition-transform duration-300
-                    group-hover:translate-x-0.5 group-hover:-translate-y-0.5"
-                  />
-                </a>
-              </div>
-            </div>
-          ))}
 
-        </div>
+
+      {/* BACKGROUND GLOW */}
+
+
+      <div
+
+      className="
+      absolute
+
+      top-20
+
+      left-1/2
+
+      -translate-x-1/2
+
+
+      w-[700px]
+
+      h-[700px]
+
+
+      rounded-full
+
+
+      bg-[#ada1f9]/20
+
+
+      blur-[160px]
+
+      "
+
+      />
+
+
+
+
+
+
+
+
+
+      {/* HEADER */}
+
+
+
+      <div
+
+      className="
+      relative
+      z-10
+
+      flex
+      flex-col
+
+      items-center
+
+      text-center
+
+      gap-5
+
+      mb-16
+
+      "
+
+      >
+
+
+
+        <p
+
+        className="
+        font-Ovo
+
+        text-lg
+
+        uppercase
+
+        tracking-widest
+
+        text-gray-500
+
+        dark:text-gray-300
+
+        "
+
+        >
+
+        My Portfolio
+
+        </p>
+
+
+
+
+
+
+
+        <h1
+
+        className="
+        text-4xl
+
+        md:text-6xl
+
+        font-bold
+
+        font-Ovo
+
+        text-black
+
+        dark:text-white
+
+        "
+
+        >
+
+        Selected Work
+
+        </h1>
+
+
+
+
+
+
+
+        <p
+
+        className="
+        max-w-4xl
+
+        font-Ovo
+
+        leading-8
+
+        text-gray-500
+
+        dark:text-gray-300
+
+        "
+
+        >
+
+        A collection of projects focused on strategy,
+        performance, scalable solutions and modern digital experiences.
+
+        </p>
+
+
+
       </div>
-    </div>
+
+
+
+
+
+
+
+
+
+      {/* PROJECT GRID */}
+
+
+
+
+      <div
+
+      className="
+      relative
+
+      z-10
+
+
+      grid
+
+      grid-cols-1
+
+      md:grid-cols-2
+
+      xl:grid-cols-3
+
+
+      gap-8
+
+      "
+
+      >
+
+
+
+
+
+      {
+
+      allProjects.map((project,index)=>(
+
+
+
+
+      <div
+
+      key={index}
+
+      className="
+
+      group
+
+      relative
+
+
+      min-h-[420px]
+
+
+      overflow-hidden
+
+
+      rounded-3xl
+
+
+      cursor-pointer
+
+
+      shadow-xl
+
+
+      transition-all
+
+
+      duration-700
+
+
+      hover:-translate-y-3
+
+
+      hover:shadow-[0_30px_80px_rgba(119,104,195,.35)]
+
+      "
+
+      >
+
+
+
+
+
+
+
+        {/* IMAGE */}
+
+
+
+        <Image
+
+        src={project.bgImage}
+
+        alt={project.title}
+
+        fill
+
+
+        className="
+
+        object-cover
+
+        transition
+
+        duration-700
+
+        group-hover:scale-110
+
+        "
+
+        />
+
+
+
+
+
+
+
+
+
+        {/* DARK OVERLAY */}
+
+
+
+        <div
+
+        className="
+
+        absolute
+
+        inset-0
+
+
+        bg-black/45
+
+
+        group-hover:bg-black/60
+
+
+        transition
+
+        duration-500
+
+        "
+
+        />
+
+
+
+
+
+
+
+
+
+        {/* BRAND OVERLAY */}
+
+
+
+        <div
+
+        className="
+
+        absolute
+
+        inset-0
+
+
+        bg-gradient-to-br
+
+
+        from-[#7768c3]/50
+
+
+        via-[#ada1f9]/20
+
+
+        to-[#5f51bd]/60
+
+
+
+        opacity-80
+
+
+
+        group-hover:opacity-100
+
+
+        transition
+
+        duration-500
+
+        "
+
+        />
+
+
+
+
+
+
+
+
+
+        {/* SHINE */}
+
+
+
+        <div
+
+        className="
+
+        absolute
+
+        -left-full
+
+
+        top-0
+
+
+        w-1/2
+
+
+        h-full
+
+
+        bg-white/20
+
+
+        skew-x-12
+
+
+        group-hover:left-[130%]
+
+
+        transition-all
+
+
+        duration-1000
+
+        "
+
+        />
+
+
+
+
+
+
+
+
+
+        {/* INFO CARD */}
+
+
+
+        <div
+
+        className="
+
+        absolute
+
+        bottom-6
+
+
+        left-1/2
+
+
+        -translate-x-1/2
+
+
+
+        w-[85%]
+
+
+
+        rounded-2xl
+
+
+
+        p-5
+
+
+
+        backdrop-blur-xl
+
+
+
+        bg-white/90
+
+
+
+        dark:bg-[#11001f]/90
+
+
+
+        border
+
+        border-white/20
+
+
+
+        shadow-xl
+
+
+
+        transition-all
+
+
+
+        duration-500
+
+
+
+        group-hover:bottom-8
+
+
+
+        "
+
+        >
+
+
+
+
+
+
+
+          <div
+
+          className="
+
+          flex
+
+          items-center
+
+          justify-between
+
+          gap-4
+
+          "
+
+          >
+
+
+
+
+
+
+
+            <div className="text-left">
+
+
+
+
+
+              <h3
+
+              className="
+
+              text-lg
+
+              font-Outfit
+
+              font-semibold
+
+              text-black
+
+              dark:text-white
+
+              "
+
+              >
+
+              {project.title}
+
+              </h3>
+
+
+
+
+
+
+
+
+              <p
+
+              className="
+
+              mt-1
+
+              text-sm
+
+              leading-5
+
+
+              text-gray-600
+
+              dark:text-gray-300
+
+              line-clamp-2
+
+              "
+
+              >
+
+              {project.description}
+
+              </p>
+
+
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <a
+
+            href={project.link}
+
+            target="_blank"
+
+            rel="noopener noreferrer"
+
+
+            onClick={(e)=>e.stopPropagation()}
+
+
+
+            className="
+
+
+            shrink-0
+
+
+            w-11
+
+
+            h-11
+
+
+            flex
+
+
+            items-center
+
+
+            justify-center
+
+
+
+            rounded-full
+
+
+
+            bg-[#ada1f9]
+
+
+
+            border
+
+
+            border-black
+
+
+
+            shadow-[3px_3px_0_#7768c3]
+
+
+
+            transition-all
+
+
+
+            duration-300
+
+
+
+            hover:scale-110
+
+
+
+            hover:rotate-6
+
+
+
+            active:scale-95
+
+
+
+            "
+
+            >
+
+
+
+
+              <Image
+
+              src={assets.send_icon}
+
+              alt="open project"
+
+              className="w-5"
+
+              />
+
+
+
+            </a>
+
+
+
+
+
+          </div>
+
+
+
+
+
+
+
+
+
+          <div
+
+          className="
+
+          mt-4
+
+
+          h-[2px]
+
+
+          w-0
+
+
+          bg-[#7768c3]
+
+
+          group-hover:w-full
+
+
+          transition-all
+
+
+          duration-700
+
+          "
+
+          />
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+      ))
+
+      }
+
+
+
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+    </section>
+
   );
+
+
 };
+
 
 export default ProjectsPage;

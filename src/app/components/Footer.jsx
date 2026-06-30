@@ -25,7 +25,7 @@ const Footer = () => {
   };
 
   const openWhatsApp = () => {
-    window.open('https://wa.me/201027254964', '_blank'); // رقم الشركة
+    window.open('https://wa.me/966597421581', '_blank'); // رقم الشركة
   };
 
   if (!mounted) return null;
@@ -53,7 +53,7 @@ const Footer = () => {
               className="w-6 transition-all duration-300"
             />
             <span className="text-gray-700 dark:text-gray-300 transition-colors duration-500">
-              KlyroTech@outlook.com
+              ahmed.baakhet@gmail.com
             </span>
           </div>
         </div>
@@ -68,7 +68,7 @@ const Footer = () => {
               isDarkMode ? "text-gray-300" : "text-gray-500"
             }`}
           >
-            © 2025 KlyroTech. All rights reserved.
+            © 2026 Ahmed Yousry. All rights reserved.
           </p>
 
           <ul className="flex gap-4 px-8">

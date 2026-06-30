@@ -57,6 +57,7 @@ import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
 
+
 export const assets = {
     user_image,
     my_image,
@@ -137,12 +138,6 @@ export const workData = [
     description: 'Digital Advertising',
     bgImage: '/work-3.webp',
     link: '/marketing', // 🔗 صفحة التسويق
-  },
-  {
-    title: 'Video Editing',
-    description: 'Learning Video Editing',
-    bgImage: '/work-4.webp',
-    link: '', // 🔗 مفيش لينك حاليًا
   },
 ];
 
@@ -231,6 +226,19 @@ export const allProjects = [
       bgImage: '/almeer.png',
       link:"https://www.almeer-saudi.com/"
     },
+    {
+      title: 'AZAL PROJECS',
+      description: 'construction and Ground Engineering services',
+      bgImage: '/azalsa.png',
+      link:"https://www.azalprojects.com/"
+    },
+    {
+      title: 'OUNCE GOLD',
+      description: 'construction and Ground Engineering services',
+      bgImage: '/ouncesa.png',
+      link:"https://ounce.com.sa/"
+    },
+
        
   ];
 
